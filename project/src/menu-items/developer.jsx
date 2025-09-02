@@ -9,16 +9,16 @@ const icons = {
 
 // ==============================|| MENU ITEMS - EXTRA PAGES ||============================== //
 
-const support = {
-  id: 'support',
-  title: 'Support',
+const  developer = {
+  id: 'developer',
+  title: 'Developer',
   type: 'group',
   children: [
      {
-      id: 'support',          // unique id for item
-      title: 'Ticket',      // sidebar pe dikhne wala naam
+      id: 'developer',          // unique id for item
+      title: 'System Logs',      // sidebar pe dikhne wala naam
       type: 'item',             // single clickable item
-      url: '/support/support',
+      url: '/developer/developer',
       icon: icons.ProfileOutlined,
       target: true              // open in same tab (true) ya naya tab (false)
     },
@@ -29,4 +29,4 @@ const support = {
   ]
 };
 
-export default support;
+export default developer;

@@ -71,7 +71,22 @@ const reports = {
       icon: icons.ProfileOutlined,
       target: true              // open in same tab (true) ya naya tab (false)
     },
-    
+    {
+      id: 'transaction-payout-summary',          // unique id for item
+      title: 'Payout MID Summary',      // sidebar pe dikhne wala naam
+      type: 'item',             // single clickable item
+      url: '/reports/transaction-payout-summary',
+      icon: icons.ProfileOutlined,
+      target: true              // open in same tab (true) ya naya tab (false)
+    },
+    {
+      id: 'transaction-payout-response',          // unique id for item
+      title: 'Transaction Payout Response',      // sidebar pe dikhne wala naam
+      type: 'item',             // single clickable item
+      url: '/reports/transaction-payout-response', 
+      icon: icons.ProfileOutlined,
+      target: true              // open in same tab (true) ya naya tab (false)
+    },
       
  
    

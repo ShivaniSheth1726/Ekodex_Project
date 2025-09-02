@@ -9,16 +9,16 @@ const icons = {
 
 // ==============================|| MENU ITEMS - EXTRA PAGES ||============================== //
 
-const support = {
-  id: 'support',
-  title: 'Support',
+const expenses = {
+  id: 'expenses',
+  title: 'Expenses',
   type: 'group',
   children: [
      {
-      id: 'support',          // unique id for item
-      title: 'Ticket',      // sidebar pe dikhne wala naam
+      id: 'expense',          // unique id for item
+      title: 'Expense',      // sidebar pe dikhne wala naam
       type: 'item',             // single clickable item
-      url: '/support/support',
+      url: '/expenses/expenses',
       icon: icons.ProfileOutlined,
       target: true              // open in same tab (true) ya naya tab (false)
     },
@@ -29,4 +29,4 @@ const support = {
   ]
 };
 
-export default support;
+export default expenses;

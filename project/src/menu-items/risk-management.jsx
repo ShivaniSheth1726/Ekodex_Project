@@ -9,16 +9,16 @@ const icons = {
 
 // ==============================|| MENU ITEMS - EXTRA PAGES ||============================== //
 
-const support = {
-  id: 'support',
-  title: 'Support',
+const  riskmanagement = {
+  id: 'riskmanagement',
+  title: '  Risk Management',
   type: 'group',
   children: [
      {
-      id: 'support',          // unique id for item
-      title: 'Ticket',      // sidebar pe dikhne wala naam
+      id: 'riskmanagement',          // unique id for item
+      title: '  Risk Management',      // sidebar pe dikhne wala naam
       type: 'item',             // single clickable item
-      url: '/support/support',
+      url: '/riskmanagement/riskmanagement',
       icon: icons.ProfileOutlined,
       target: true              // open in same tab (true) ya naya tab (false)
     },
@@ -29,4 +29,4 @@ const support = {
   ]
 };
 
-export default support;
+export default riskmanagement;

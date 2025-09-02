@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TransactionReport() {
+export default function TransactionSummaryReport() {
   const containerStyle = {
     fontFamily: "Arial, sans-serif",
     backgroundColor: "#f8f9fa",
@@ -8,16 +8,48 @@ export default function TransactionReport() {
     padding: "20px",
   };
 
+  const headerStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: "20px",
+  };
+
+  const leftHeaderStyle = {
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+  };
+
+  const menuIconStyle = {
+    fontSize: "20px",
+    cursor: "pointer",
+  };
+
   const breadcrumbStyle = {
     fontSize: "14px",
     color: "#666",
-    marginBottom: "5px",
   };
 
   const titleStyle = {
     fontSize: "22px",
     fontWeight: "bold",
-    marginBottom: "15px",
+    marginTop: "5px",
+  };
+
+  const rightHeaderStyle = {
+    display: "flex",
+    alignItems: "center",
+    gap: "15px",
+    fontSize: "13px",
+    color: "#333",
+  };
+
+  const avatarStyle = {
+    width: "32px",
+    height: "32px",
+    borderRadius: "50%",
+    backgroundColor: "#ddd",
   };
 
   const cardStyle = {
@@ -56,7 +88,7 @@ export default function TransactionReport() {
   };
 
   const tableStyle = {
-    minWidth: "1000px", // ensures scroll if screen is smaller
+    minWidth: "1000px",
     borderCollapse: "collapse",
     fontSize: "13px",
     width: "100%",
@@ -80,20 +112,18 @@ export default function TransactionReport() {
 
   return (
     <div style={containerStyle}>
-      {/* Breadcrumb */}
-      <div style={breadcrumbStyle}>Dashboard &gt; Report &gt; Transaction Summary Report</div>
+      {/* Header */}
+      <div style={headerStyle}>
+        
 
-      {/* Title */}
-      <div style={titleStyle}>Report</div>
+       
+      </div>
 
       {/* Card */}
       <div style={cardStyle}>
         {/* Buttons */}
         <div style={buttonRowStyle}>
-          <button style={exportBtn}>⬇ Export</button>
-          <button style={dailyBtn}>Daily</button>
-          <button style={weeklyBtn}>Weekly</button>
-          <button style={monthlyBtn}>Monthly</button>
+          
           <button style={filterBtn}>⚙ Advance Filter</button>
           <button style={resetBtn}>Reset</button>
         </div>

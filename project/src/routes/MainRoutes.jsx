@@ -60,6 +60,47 @@ const TransactionSummaryPage = Loadable(lazy(() => import('pages/reports/transac
 const TransactionPayingResponsePage = Loadable(lazy(() => import('pages/reports/transaction-paying-response')));
 const PayoutMIDSummaryPage = Loadable(lazy(() => import('pages/reports/payout-MID-summary')));
 const TransactionPayoutSummaryPage = Loadable(lazy(() => import('pages/reports/transaction-payout-summary')));
+const TransactionSummaryReport = Loadable(lazy(() => import('pages/reports/transaction-payout-response')));
+
+// render - payments
+const PaymentLinkPage = Loadable(lazy(() => import('pages/payments/payments')));
+
+// render - invoices
+const InvoicePage = Loadable(lazy(() => import('pages/invoices/invoices')));
+
+// render - expenses
+const ExpensePage = Loadable(lazy(() => import('pages/expenses/expenses')));
+
+// render - developer
+const DeveloperPage = Loadable(lazy(() => import('pages/developer/developer')));
+
+// render - riskmanagement
+const RiskManagementPage = Loadable(lazy(() => import('pages/riskmanagement/riskmanagement')));
+
+// render - notification
+const NotificationPage = Loadable(lazy(() => import('pages/notification/notification')));
+
+// render - support
+const Tickets = Loadable(lazy(() => import('pages/support/support')));
+
+// render - other
+const Achieve = Loadable(lazy(() => import('pages/other/achieve')));
+const TestTransactions = Loadable(lazy(() => import('pages/other/tests')));
+const RefundTransactions = Loadable(lazy(() => import('pages/other/refund')));
+const Chargeback = Loadable(lazy(() => import('pages/other/chargeback')));
+
+// render - master
+const Agreement = Loadable(lazy(() => import('pages/master/agreement')));
+const Business = Loadable(lazy(() => import('pages/master/business')));
+const Crypto = Loadable(lazy(() => import('pages/master/crypto')));
+const Feature = Loadable(lazy(() => import('pages/master/feature')));
+const Industry = Loadable(lazy(() => import('pages/master/industries')));
+const Integration = Loadable(lazy(() => import('pages/master/integration')));
+const PaymentMethod = Loadable(lazy(() => import('pages/master/payment-method')));
+const PaymentOption = Loadable(lazy(() => import('pages/master/payment-option')));
+const Plugin = Loadable(lazy(() => import('pages/master/plugin')));
+const Required = Loadable(lazy(() => import('pages/master/required')));
+const Solution = Loadable(lazy(() => import('pages/master/solution')));
 
 const MainRoutes = {
   path: '/',
@@ -148,8 +189,77 @@ const MainRoutes = {
         { path: 'transaction-paying-response', element: <TransactionPayingResponsePage /> },
         { path: 'payout-MID-summary', element: <PayoutMIDSummaryPage /> },
         { path: 'transaction-payout-summary', element: <TransactionPayoutSummaryPage /> },
+        { path: 'transaction-payout-response', element: <TransactionSummaryReport /> },
       ]
     },
+    {
+      path: 'payments',
+      children: [
+        { path: 'payments', element: <PaymentLinkPage /> },
+      ] 
+    },
+    {
+      path: 'invoices',
+      children: [
+        { path: 'invoices', element: <InvoicePage /> },
+      ] 
+    },
+    {
+      path: 'expenses',
+      children: [
+        { path: 'expenses', element: <ExpensePage /> },
+      ]
+    },
+    {
+      path: 'developer',
+      children: [
+        { path: 'developer', element: <DeveloperPage /> },
+      ]
+    },
+    {
+      path: 'riskmanagement',
+      children: [
+        { path: 'riskmanagement', element: <RiskManagementPage /> },
+      ]
+    },
+    {
+      path: 'notification',
+      children: [
+        { path: 'notification', element: <NotificationPage /> },
+      ]
+    },
+    {
+      path: 'support',
+      children: [
+        { path: 'support', element: <Tickets /> },
+      ]
+    },
+    {
+      path: 'other',
+      children: [
+        { path: 'achieve', element: <Achieve /> },
+        { path: 'tests', element: <TestTransactions /> },
+        { path: 'refund', element: <RefundTransactions /> },
+        { path: 'chargeback', element: <Chargeback /> }
+       
+      ]
+    },
+    {
+      path: 'master',
+      children: [
+        { path: 'agreement', element: <Agreement /> },
+        { path: 'business', element: <Business /> },
+        { path: 'crypto', element: <Crypto /> },
+        { path: 'feature', element: <Feature /> },
+        { path: 'industries', element: <Industry /> },
+        { path: 'integration', element: <Integration /> },
+        { path: 'payment-method', element: <PaymentMethod /> },
+        { path: 'payment-option', element: <PaymentOption /> },
+        { path: 'plugin', element: <Plugin /> },
+        { path: 'required', element: <Required /> },
+        { path: 'solution', element: <Solution /> }
+      ]
+    }
   ]
 };
 
