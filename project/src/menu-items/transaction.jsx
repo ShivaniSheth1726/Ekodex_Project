@@ -1,37 +1,26 @@
 // assets
-import { LoginOutlined, ProfileOutlined } from '@ant-design/icons';
+import { DashboardOutlined } from '@ant-design/icons';
 
 // icons
 const icons = {
-  LoginOutlined,
-  ProfileOutlined
+  DashboardOutlined
 };
 
-// ==============================|| MENU ITEMS - EXTRA PAGES ||============================== //
+// ==============================|| MENU ITEMS - DASHBOARD ||============================== //
 
 const transaction = {
   id: 'transaction',
-  title: 'All Transactions',
+  title: 'transaction',
   type: 'group',
   children: [
     {
-      id: 'upi',
-      title: 'UPI',
+      id: 'transaction',
+      title: 'Transactions',
       type: 'item',
-      url: '/transaction/upi-transaction',
-      icon: icons.ProfileOutlined,
-      target: true
-    },
-    {
-      id: 'card',
-      title: 'card',
-      type: 'item',
-      url: '/transaction/card-transaction',
-      icon: icons.ProfileOutlined,
-      target: true
+      url: '/transaction/transaction',
+      icon: icons.DashboardOutlined,
+      breadcrumbs: false
     }
-  
-    
   ]
 };
 

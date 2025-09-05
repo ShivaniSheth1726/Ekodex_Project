@@ -1,29 +1,20 @@
 // project import
 import dashboard from './dashboard';
-import pages from './page';
-import utilities from './utilities';
-import support from './support';     
-import usermanagement from './usermanagement';
-import pendingapproval from './pendingapproval';
-import transaction from './transaction';  
-import payouts from './payouts';
-import settlements from './settlements';
-import connector from './connector';
-import reports from './reports';
-import payments from './payments';
-import invoices from './invoices';  
-import expenses from './expenses';
-import developer from './developer';
-import riskmanagement from './risk-management';
-import notification from './notification';
-import master from './master';
-import other from './other';
-
+import transaction from './transaction';
+import report from './report';
+import configuration from './configuration';
+import page from './page';
+import billing from './billing';
+import custinvoice from './custinvoice';   
+import antifraud from './antifraud';   
+import queue from './queues';
+import schedule from './schedule';   
+import declineReason from './declineReason';
 
 // ==============================|| MENU ITEMS ||============================== //
 
 const menuItems = {
-  items: [dashboard, usermanagement, pendingapproval, transaction, payouts, settlements, connector, reports, payments, invoices, expenses, developer, riskmanagement, notification, master, support, other,  pages, utilities, ]
+  items: [dashboard, transaction, report, configuration, page, billing, custinvoice, antifraud, queue, schedule, declineReason]
 };
 
 export default menuItems;
