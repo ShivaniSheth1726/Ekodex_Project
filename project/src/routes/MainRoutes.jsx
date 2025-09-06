@@ -90,6 +90,12 @@ const Translate = Loadable(lazy(() => import('pages/declinereason/translate')));
 const Group = Loadable(lazy(() => import('pages/declinereason/group')));
 const Category = Loadable(lazy(() => import('pages/declinereason/category')));
 
+// render - credit
+const CreditBalance = Loadable(lazy(() => import('pages/credit/credit')));
+
+// render - support
+const Support = Loadable(lazy(() => import('pages/support/support')));
+
 const MainRoutes = {
   path: '/',
   element: <DashboardLayout />, // sidebar layout
@@ -211,6 +217,18 @@ const MainRoutes = {
         { path: 'category', element: <Category /> },
       ]
     },
+    {
+      path: 'credit',
+      children: [
+        { path: 'credit', element: <CreditBalance /> },
+      ]
+    },
+    {
+      path: 'support',
+      children: [
+        { path: 'support', element: <Support /> },
+      ]
+    }
    
   ]
 };
